@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: radial-gradient(
+      circle at center center,
+      transparent 0%,
+      rgb(0, 0, 0) 85%
+    ),
+    linear-gradient(
+      78deg,
+      rgba(192, 192, 192, 0.05) 0%,
+      rgba(192, 192, 192, 0.05) 50%,
+      rgba(60, 60, 60, 0.05) 50%,
+      rgba(60, 60, 60, 0.05) 100%
+    ),
+    linear-gradient(
+      227deg,
+      rgba(97, 97, 97, 0.05) 0%,
+      rgba(97, 97, 97, 0.05) 50%,
+      rgba(52, 52, 52, 0.05) 50%,
+      rgba(52, 52, 52, 0.05) 100%
+    ),
+    linear-gradient(
+      240deg,
+      rgba(98, 98, 98, 0.05) 0%,
+      rgba(98, 98, 98, 0.05) 50%,
+      rgba(249, 249, 249, 0.05) 50%,
+      rgba(249, 249, 249, 0.05) 100%
+    ),
+    linear-gradient(
+      187deg,
+      rgba(1, 1, 1, 0.05) 0%,
+      rgba(1, 1, 1, 0.05) 50%,
+      rgba(202, 202, 202, 0.05) 50%,
+      rgba(202, 202, 202, 0.05) 100%
+    ),
+    linear-gradient(
+      101deg,
+      rgba(61, 61, 61, 0.05) 0%,
+      rgba(61, 61, 61, 0.05) 50%,
+      rgba(254, 254, 254, 0.05) 50%,
+      rgba(254, 254, 254, 0.05) 100%
+    ),
+    linear-gradient(
+      176deg,
+      rgba(237, 237, 237, 0.05) 0%,
+      rgba(237, 237, 237, 0.05) 50%,
+      rgba(147, 147, 147, 0.05) 50%,
+      rgba(147, 147, 147, 0.05) 100%
+    ),
+    linear-gradient(
+      304deg,
+      rgba(183, 183, 183, 0.05) 0%,
+      rgba(183, 183, 183, 0.05) 50%,
+      rgba(57, 57, 57, 0.05) 50%,
+      rgba(57, 57, 57, 0.05) 100%
+    ),
+    radial-gradient(
+      circle at center center,
+      hsl(351, 4%, 12%),
+      hsl(351, 4%, 12%)
+    );
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-image: linear-gradient(
+      225deg,
+      rgba(195, 195, 195, 0.04) 0%,
+      rgba(195, 195, 195, 0.04) 25%,
+      rgba(234, 234, 234, 0.04) 25%,
+      rgba(234, 234, 234, 0.04) 50%,
+      rgba(107, 107, 107, 0.04) 50%,
+      rgba(107, 107, 107, 0.04) 75%,
+      rgba(132, 132, 132, 0.04) 75%,
+      rgba(132, 132, 132, 0.04) 100%
+    ),
+    linear-gradient(
+      65deg,
+      rgba(116, 116, 116, 0.04) 0%,
+      rgba(116, 116, 116, 0.04) 25%,
+      rgba(219, 219, 219, 0.04) 25%,
+      rgba(219, 219, 219, 0.04) 50%,
+      rgba(33, 33, 33, 0.04) 50%,
+      rgba(33, 33, 33, 0.04) 75%,
+      rgba(165, 165, 165, 0.04) 75%,
+      rgba(165, 165, 165, 0.04) 100%
+    ),
+    linear-gradient(
+      251deg,
+      rgba(38, 38, 38, 0.04) 0%,
+      rgba(38, 38, 38, 0.04) 25%,
+      rgba(223, 223, 223, 0.04) 25%,
+      rgba(223, 223, 223, 0.04) 50%,
+      rgba(35, 35, 35, 0.04) 50%,
+      rgba(35, 35, 35, 0.04) 75%,
+      rgba(203, 203, 203, 0.04) 75%,
+      rgba(203, 203, 203, 0.04) 100%
+    ),
+    linear-gradient(
+      236deg,
+      rgba(206, 206, 206, 0.04) 0%,
+      rgba(206, 206, 206, 0.04) 25%,
+      rgba(13, 13, 13, 0.04) 25%,
+      rgba(13, 13, 13, 0.04) 50%,
+      rgba(151, 151, 151, 0.04) 50%,
+      rgba(151, 151, 151, 0.04) 75%,
+      rgba(255, 255, 255, 0.04) 75%,
+      rgba(255, 255, 255, 0.04) 100%
+    ),
+    linear-gradient(
+      260deg,
+      rgba(133, 133, 133, 0.04) 0%,
+      rgba(133, 133, 133, 0.04) 25%,
+      rgba(169, 169, 169, 0.04) 25%,
+      rgba(169, 169, 169, 0.04) 50%,
+      rgba(91, 91, 91, 0.04) 50%,
+      rgba(91, 91, 91, 0.04) 75%,
+      rgba(74, 74, 74, 0.04) 75%,
+      rgba(74, 74, 74, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(8, 35, 191), rgb(45, 136, 225));
+  height: 100vh;
+  margin-bottom: 2rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 100px;
+}
+.logo {
+  max-height: 60px;
+  border-radius: 40%;
+}
+.navbar > h1 {
+  text-align: center;
+  color: #cdba1f;
+  padding-top: 1.5rem;
+}
+.navbar > h2 {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 5rem;
+  font-size: 80px;
+  font-family: cursive;
+}
+.navbar > p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: larger;
+  margin-top: 1rem;
+  font-family: cursive;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #cdba1f;
+  position: relative;
+  padding: 5px 0;
+  font-weight: 300;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .navbar > h2 {
+    font-size: 50px;
+  }
+}
+
+/*section one*/
+.sectionone {
+  display: flex;
+}
+.imgtwo {
+  width: 30rem;
+  height: 20rem;
+  margin-left: 5rem;
+  margin-right: 15rem;
+}
+.right {
+  width: 50%;
+}
+.right > h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+.paraone {
+  font-size: 1rem;
+  width: 70%;
+  line-height: 1.5rem;
+  color: whitesmoke;
+}
+@media screen and (max-width: 768px) {
+  .sectionone {
+    flex-direction: column;
+  }
+  .imgtwo {
+    width: 15rem;
+    height: 10rem;
+  }
+  .right {
+    width: 20rem;
+  }
+  .right > h1 {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .paraone {
+    margin-left: 5rem;
+    width: 100%;
+  }
+}
+
+/*section two*/
+.sectiontwo {
+  display: flex;
+  margin-top: 8rem;
+}
+.left {
+  width: 50%;
+  margin-left: 5rem;
+}
+.left > h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+.paratwo {
+  font-size: 1rem;
+  width: 70%;
+  line-height: 1.5rem;
+  color: whitesmoke;
+}
+.imgthree {
+  width: 30rem;
+  height: 20rem;
+  margin-right: 15rem;
+}
+@media screen and (max-width: 768px) {
+  .sectiontwo {
+    flex-direction: column;
+  }
+  .imgthree {
+    width: 15rem;
+    height: 10rem;
+    margin-left: 5rem;
+  }
+  .left {
+    width: 20rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .left > h1 {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .paratwo {
+    margin-left: 5rem;
+    width: 100%;
+  }
+}
+/*sectionthree*/
+.sectionthree {
+  margin-top: 8rem;
+}
+.sectionthree > h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  height: 30rem;
+  width: 15rem;
+  border: 1px solid black;
+}
+.card > img {
+  width: 100%;
+}
+.info h3 {
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+.info > p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 1150px) {
+  .container {
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+  }
+}
+/*sectionfour*/
+.sectionfour {
+  position: relative;
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+}
+.sectionfour > img {
+  height: 40rem;
+  margin-left: 5rem;
+  width: 70%;
+}
+.sectionfour > p {
+  font-size: 1.65rem;
+  width: 45%;
+  position: relative;
+  right: 8rem;
+  text-align: center;
+  color: whitesmoke;
+}
+@media screen and (max-width: 1100px) {
+  .sectionfour > p {
+    font-size: 1rem;
+    right: 3rem;
+  }
+  .sectionfour > img {
+    height: 30rem;
+  }
+}
+/*sectionfive */
+.sectionfive {
+  margin-top: 8rem;
+  background-image: linear-gradient(
+      45deg,
+      rgba(254, 246, 210, 0.53) 0%,
+      rgba(254, 246, 210, 0.53) 14.286%,
+      rgba(221, 240, 216, 0.53) 14.286%,
+      rgba(221, 240, 216, 0.53) 28.572%,
+      rgba(188, 233, 223, 0.53) 28.572%,
+      rgba(188, 233, 223, 0.53) 42.858%,
+      rgba(156, 227, 229, 0.53) 42.858%,
+      rgba(156, 227, 229, 0.53) 57.144%,
+      rgba(123, 220, 235, 0.53) 57.144%,
+      rgba(123, 220, 235, 0.53) 71.42999999999999%,
+      rgba(90, 214, 242, 0.53) 71.43%,
+      rgba(90, 214, 242, 0.53) 85.71600000000001%,
+      rgba(57, 207, 248, 0.53) 85.716%,
+      rgba(57, 207, 248, 0.53) 100.002%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(246, 99, 200) 0%,
+      rgb(246, 99, 200) 12.5%,
+      rgb(223, 98, 196) 12.5%,
+      rgb(223, 98, 196) 25%,
+      rgb(199, 97, 192) 25%,
+      rgb(199, 97, 192) 37.5%,
+      rgb(176, 96, 188) 37.5%,
+      rgb(176, 96, 188) 50%,
+      rgb(152, 95, 184) 50%,
+      rgb(152, 95, 184) 62.5%,
+      rgb(129, 94, 180) 62.5%,
+      rgb(129, 94, 180) 75%,
+      rgb(105, 93, 176) 75%,
+      rgb(105, 93, 176) 87.5%,
+      rgb(82, 92, 172) 87.5%,
+      rgb(82, 92, 172) 100%
+    );
+  height: 30rem;
+}
+.sectionfive > h1 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3rem;
+}
+.sectionfive > p {
+  text-align: center;
+  padding-top: 5rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.sectionfive > button {
+  margin-top: 4rem;
+  margin-left: 45rem;
+  background-color: #fd4766;
+  color: white;
+  border: 2px solid transparent;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.sectionfive > button:hover {
+  background-color: transparent;
+  border: 2px solid #fd4766;
+  cursor: pointer;
+  color: black;
+}
+@media screen and (max-width: 1240px) {
+  .sectionfive > p {
+    padding: 0;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 876px) {
+  .sectionfive > button {
+    margin-left: 15rem;
+  }
+}
+/*sectionsix*/
+.headsix {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+.contact > h3 {
+  color: whitesmoke;
+}
+.contact > h3 + p {
+  color: whitesmoke;
+}
+.contactinfo {
+  display: flex;
+  margin-left: 15rem;
+  justify-content: space-between;
+  margin-right: 15rem;
+}
+.contactinfo > p {
+  font-size: 18px;
+  color: whitesmoke;
+}
+h4 + p {
+  font-size: 15px;
+  color: whitesmoke;
+}
+.phone > h4 {
+  color: whitesmoke;
+}
+@media screen and (max-width: 1150px) {
+  .contactinfo {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+/*footer*/
+footer > p {
+  margin-top: 3rem;
+  text-align: center;
+  color: whitesmoke;
+}
