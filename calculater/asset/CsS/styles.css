@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      45deg,
+      rgba(254, 246, 210, 0.53) 0%,
+      rgba(254, 246, 210, 0.53) 14.286%,
+      rgba(221, 240, 216, 0.53) 14.286%,
+      rgba(221, 240, 216, 0.53) 28.572%,
+      rgba(188, 233, 223, 0.53) 28.572%,
+      rgba(188, 233, 223, 0.53) 42.858%,
+      rgba(156, 227, 229, 0.53) 42.858%,
+      rgba(156, 227, 229, 0.53) 57.144%,
+      rgba(123, 220, 235, 0.53) 57.144%,
+      rgba(123, 220, 235, 0.53) 71.42999999999999%,
+      rgba(90, 214, 242, 0.53) 71.43%,
+      rgba(90, 214, 242, 0.53) 85.71600000000001%,
+      rgba(57, 207, 248, 0.53) 85.716%,
+      rgba(57, 207, 248, 0.53) 100.002%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(246, 99, 200) 0%,
+      rgb(246, 99, 200) 12.5%,
+      rgb(223, 98, 196) 12.5%,
+      rgb(223, 98, 196) 25%,
+      rgb(199, 97, 192) 25%,
+      rgb(199, 97, 192) 37.5%,
+      rgb(176, 96, 188) 37.5%,
+      rgb(176, 96, 188) 50%,
+      rgb(152, 95, 184) 50%,
+      rgb(152, 95, 184) 62.5%,
+      rgb(129, 94, 180) 62.5%,
+      rgb(129, 94, 180) 75%,
+      rgb(105, 93, 176) 75%,
+      rgb(105, 93, 176) 87.5%,
+      rgb(82, 92, 172) 87.5%,
+      rgb(82, 92, 172) 100%
+    );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 300px;
+  height: 500px;
+  box-shadow: 4px 4px 30px rgb(0, 0, 0, 0.3);
+  background-image: radial-gradient(
+      circle at center center,
+      transparent 0%,
+      rgb(0, 0, 0) 85%
+    ),
+    linear-gradient(
+      78deg,
+      rgba(192, 192, 192, 0.05) 0%,
+      rgba(192, 192, 192, 0.05) 50%,
+      rgba(60, 60, 60, 0.05) 50%,
+      rgba(60, 60, 60, 0.05) 100%
+    ),
+    linear-gradient(
+      227deg,
+      rgba(97, 97, 97, 0.05) 0%,
+      rgba(97, 97, 97, 0.05) 50%,
+      rgba(52, 52, 52, 0.05) 50%,
+      rgba(52, 52, 52, 0.05) 100%
+    ),
+    linear-gradient(
+      240deg,
+      rgba(98, 98, 98, 0.05) 0%,
+      rgba(98, 98, 98, 0.05) 50%,
+      rgba(249, 249, 249, 0.05) 50%,
+      rgba(249, 249, 249, 0.05) 100%
+    ),
+    linear-gradient(
+      187deg,
+      rgba(1, 1, 1, 0.05) 0%,
+      rgba(1, 1, 1, 0.05) 50%,
+      rgba(202, 202, 202, 0.05) 50%,
+      rgba(202, 202, 202, 0.05) 100%
+    ),
+    linear-gradient(
+      101deg,
+      rgba(61, 61, 61, 0.05) 0%,
+      rgba(61, 61, 61, 0.05) 50%,
+      rgba(254, 254, 254, 0.05) 50%,
+      rgba(254, 254, 254, 0.05) 100%
+    ),
+    linear-gradient(
+      176deg,
+      rgba(237, 237, 237, 0.05) 0%,
+      rgba(237, 237, 237, 0.05) 50%,
+      rgba(147, 147, 147, 0.05) 50%,
+      rgba(147, 147, 147, 0.05) 100%
+    ),
+    linear-gradient(
+      304deg,
+      rgba(183, 183, 183, 0.05) 0%,
+      rgba(183, 183, 183, 0.05) 50%,
+      rgba(57, 57, 57, 0.05) 50%,
+      rgba(57, 57, 57, 0.05) 100%
+    ),
+    radial-gradient(
+      circle at center center,
+      hsl(351, 4%, 12%),
+      hsl(351, 4%, 12%)
+    );
+  border-radius: 12px;
+  overflow: hidden;
+}
+form input {
+  width: 88%;
+  height: 150px;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  color: black;
+  background: rgb(246, 219, 212);
+  text-align: right;
+  pointer-events: none;
+  margin: 1rem 0rem 0rem 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.btn-yellow {
+  background-color: #fbb100;
+  font-size: 1.8rem;
+}
+.btn-grey {
+  background-color: #c2d4b1;
+}
+.btn-equal {
+  background-color: rgb(49, 212, 49);
+}
+.btn-red {
+  background-color: #dd2d00;
+}
+.btn-backspace {
+  background-color: #44e9e9;
+}
+button {
+  flex: 0 0 22%;
+  margin: 5px 0;
+  border: 1px solid black;
+  width: 60px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input {
+  flex: 0 0 22%;
+  margin: 5px 0;
+  border: 1px solid black;
+  width: 60px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-grey:hover {
+  background-color: azure;
+}
+.btn-backspace:hover {
+  background-color: rgb(4, 181, 252);
+}
+.btn-red:hover {
+  background-color: red;
+}
+.btn-equal:hover {
+  background-color: rgb(2, 252, 2);
+}
+.btn-yellow:hover {
+  background-color: rgb(208, 136, 4);
+}
